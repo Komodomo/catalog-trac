@@ -31,13 +31,13 @@ Website katalog TRAC Astra Rent A Car cabang Banjarmasin. Website ini dibuat unt
 1. Clone repositori ini:
 
    ```bash
-   git clone https://github.com/username/trac-astra-catalog.git
+   git clone https://github.com/Komodomo/catalog-trac.git
    ```
 
 2. Masuk ke direktori proyek:
 
    ```bash
-   cd trac-astra-catalog
+   cd catalog-trac
    ```
 
 3. Install dependencies backend dengan Composer:
