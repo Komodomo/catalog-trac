@@ -35,4 +35,4 @@ require __DIR__.'/auth.php';
 
 
 //admin
-Route::get('admin/dashboard', [HomeController::class, 'index']);
+Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'admin']);
