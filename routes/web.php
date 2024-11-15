@@ -14,8 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+//global
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
+});
+
+// Fallback route
+Route::fallback(function () {
+    return redirect('/');
 });
 
 //user
@@ -36,3 +46,4 @@ require __DIR__.'/auth.php';
 
 //admin
 Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'admin']);
+
